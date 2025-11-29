@@ -729,6 +729,13 @@
             color: white;
             font-weight: 600;
             font-size: 1.1rem;
+            overflow: hidden;
+        }
+
+        .testimonial-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .testimonial-info h4 {
@@ -1475,7 +1482,7 @@
                         </div>
                         <p class="testimonial-text">With your amazing strategies, I increased my SAT score by 180 points. Thank you for all of your help!<span class="testimonial-highlight">+180 Point Improvement!</span></p>
                         <div class="testimonial-author">
-                            <div class="testimonial-avatar">J</div>
+                            <div class="testimonial-avatar"><img src="images/jordan.webp" alt="Jordan"></div>
                             <div class="testimonial-info">
                                 <h4>Jordan</h4>
                                 <p>Raleigh, NC • SAT Prep</p>
@@ -1489,7 +1496,7 @@
                         </div>
                         <p class="testimonial-text">I feel like you (Chris) understand me. The small group experience was invaluable. I learned as much from my group as I did from you!<span class="testimonial-highlight">+220 Point SAT Improvement!</span></p>
                         <div class="testimonial-author">
-                            <div class="testimonial-avatar">N</div>
+                            <div class="testimonial-avatar"><img src="images/noah.png" alt="Noah W."></div>
                             <div class="testimonial-info">
                                 <h4>Noah W.</h4>
                                 <p>Los Gatos, CA • SAT Prep</p>
@@ -1503,7 +1510,7 @@
                         </div>
                         <p class="testimonial-text">I came from Texas to play football at Duke. Your coaching and guidance helped me to navigate my academic and my athletic commitments.<span class="testimonial-highlight">3.75 GPA at Duke!</span></p>
                         <div class="testimonial-author">
-                            <div class="testimonial-avatar">C</div>
+                            <div class="testimonial-avatar"><img src="images/caleb.webp" alt="Caleb"></div>
                             <div class="testimonial-info">
                                 <h4>Caleb</h4>
                                 <p>Duke University • Class of '24</p>
@@ -1517,7 +1524,7 @@
                         </div>
                         <p class="testimonial-text">Whether it is Math, Writing, or SAT Prep, you have all the answers! My confidence has jumped since I started working with you.<span class="testimonial-highlight">Worth Every Penny!</span></p>
                         <div class="testimonial-author">
-                            <div class="testimonial-avatar">M</div>
+                            <div class="testimonial-avatar"><img src="images/michael.webp" alt="Michael"></div>
                             <div class="testimonial-info">
                                 <h4>Michael</h4>
                                 <p>Philadelphia, PA • Class of '24</p>
@@ -1531,45 +1538,52 @@
                         </div>
                         <p class="testimonial-text">The best! Chris is amazing. Patient. He understands what I need and focuses on that educational target. I highly recommend him.</p>
                         <div class="testimonial-author">
-                            <div class="testimonial-avatar">D</div>
+                            <div class="testimonial-avatar"><img src="images/david.webp" alt="David"></div>
                             <div class="testimonial-info">
                                 <h4>David</h4>
                                 <p>Bend, OR • Class of '25</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <span class="testimonial-quote-icon">"</span>
-                        <div class="testimonial-stars">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                        </div>
-                        <p class="testimonial-text">Now that I have a better understanding of what's going on in Math, I am eager to take on new challenges. I had a fantastic experience here with Chris!</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">A</div>
-                            <div class="testimonial-info">
-                                <h4>Alex K.</h4>
-                                <p>Concord, MA • Algebra II</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <span class="testimonial-quote-icon">"</span>
-                        <div class="testimonial-stars">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                        </div>
-                        <p class="testimonial-text">When I first asked Chris for help, I was struggling with math and just staying on top of all my schoolwork. Luckily, Chris was great in helping me to get organized. Without his help, I do not think I would have survived Junior Year.</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">E</div>
-                            <div class="testimonial-info">
-                                <h4>Eric H.</h4>
-                                <p>Bend, OR • Math & Executive Function</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+</div>
                 <div class="slider-nav">
                     <button class="slider-btn" id="prevBtn" aria-label="Previous testimonial">←</button>
                     <button class="slider-btn" id="nextBtn" aria-label="Next testimonial">→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Testimonial Section -->
+    <section class="video-testimonial" style="padding: 6rem 2rem; background: var(--cream);">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+            <div class="section-header">
+                <div class="section-label">
+                    <span>★</span>
+                    Video Testimonials
+                </div>
+                <h2>Hear From Our Students</h2>
+                <p>Watch students share their experiences working with 5-Star Learning.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 2rem;">
+                <div style="border-radius: 24px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);">
+                    <video controls style="width: 100%; display: block;">
+                        <source src="videos/alex.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div style="padding: 1rem; background: white; text-align: left;">
+                        <h4 style="font-family: 'Outfit', sans-serif; color: #2D3436; margin-bottom: 0.25rem;">Alex K.</h4>
+                        <p style="color: #636E72; font-size: 0.9rem;">Concord, MA • Algebra II</p>
+                    </div>
+                </div>
+                <div style="border-radius: 24px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);">
+                    <video controls style="width: 100%; display: block;">
+                        <source src="videos/owen_testimonial.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div style="padding: 1rem; background: white; text-align: left;">
+                        <h4 style="font-family: 'Outfit', sans-serif; color: #2D3436; margin-bottom: 0.25rem;">Owen</h4>
+                        <p style="color: #636E72; font-size: 0.9rem;">Washington DC • Class of '24 • Math & SAT Prep • <strong style="color: #1A5F7A;">1510 SAT!</strong></p>
+                    </div>
                 </div>
             </div>
         </div>
